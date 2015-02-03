@@ -1,0 +1,45 @@
+/*reset bootstrap pane*/
+#profile_panel .panel-body{
+    padding: 0;
+}
+.user-image{
+    background: url(../img/login_bg.jpg) no-repeat center/cover;
+    background-size: 100% 100%;
+    text-align: center;
+    border-bottom: 3px solid #bce8f1;
+    position: relative;
+}
+.user_info{
+    position: relative;
+    padding: 100px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: white;
+    z-index: 99;
+}
+.panel-body{
+    
+}
+.profile_overlay{
+    
+    position: absolute;
+    background: rgba(0,0,0,.4);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    
+}
+.midsize{
+    
+    width: 98px;
+height: 98px;
+vertical-align: middle;
+margin: -4px 2px;
+border: 3px solid #bce8f1;
+}
+.col3{
+    margin: 10px 0;
+}
+

@@ -1,0 +1,5 @@
+@include('__partials/doc')
+@yield('header')
+@yield('sidebar')
+@yield('content')
+@yield('footer')

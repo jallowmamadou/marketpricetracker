@@ -1,0 +1,87 @@
+
+
+body.login{
+		background: $login-background-color;
+		hr{
+			margin-top: 20px;
+			margin-bottom: 20px;
+			border: 0;
+			border-top: 1px solid $login-lcolor;
+		}
+		.form-signin {
+		  max-width: 330px;
+		  padding: 15px;
+		  margin: 0 auto;
+		}
+		.form-signin .form-signin-heading,
+		.form-signin .checkbox {
+		  margin-bottom: 10px;
+		}
+		.form-signin .checkbox {
+		  font-weight: normal;
+		}
+		.form-signin .form-control {
+		  position: relative;
+		  height: auto;
+		  -webkit-box-sizing: border-box;
+		     -moz-box-sizing: border-box;
+		          box-sizing: border-box;
+		}
+		.form-signin .form-control:focus {
+		  z-index: 2;
+		}
+		.form-signin input[type="tel"] {
+		  margin-bottom: -1px;
+		  border-bottom-right-radius: 0;
+		  border-bottom-left-radius: 0;
+		}
+		.form-signin input[type="password"] {
+		  margin-bottom: 10px;
+		  border-top-left-radius: 0;
+		  border-top-right-radius: 0;
+		}
+		/*reseting the main bootstrap styles*/
+		.page-header{
+		  margin: 0 !important;
+		}
+
+
+
+	div.container{
+		header{
+			display: block;
+			text-align: center;
+			line-height: inherit;
+			text-transform: uppercase;
+			h4{
+				text-transform: capitalize;
+			}
+		}
+		form#signin{
+			margin-top: 12px;
+			clear: both;
+
+			div.access > a{
+				display: inline;
+				float: left;
+				padding: 2%;
+				margin: 0.5rem 1rem;
+			}
+		}
+	}
+
+	footer{
+			margin-top: 12px;
+			border-top: 1px solid $login-lcolor;
+	}
+
+
+.lcircle{
+	border: 3px solid $circle-border;
+	height: 205px;
+}
+
+
+
+}
+

@@ -1,0 +1,1 @@
+/var/www/realestate/html/app/views/UserProperties/create.blade.php
