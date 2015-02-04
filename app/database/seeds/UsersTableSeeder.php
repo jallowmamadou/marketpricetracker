@@ -7,13 +7,14 @@ class UsersTableSeeder extends Seeder {
 
 	public function run()
 	{
+		Eloquent::unguard();
 		$faker = Faker::create();
-		$this->call('UserTableSeeder');
-		foreach(range(1, 10) as $index)
+		// $this->call('UserTableSeeder');
+		foreach(range(1, 20) as $index)
 		{
-			return User::create([
-				'email'=>'sulsira@hotmail.com',
-				'password'=>Hash::make('shs123')
+			User::create([
+				'phone'=> $faker->username,
+				'password'=>Hash::make($faker->word)
 			]);
 		}
 

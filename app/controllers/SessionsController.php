@@ -10,7 +10,7 @@ class SessionsController extends \WelcomeController {
 	 */
 	public function index()
 	{
-		//
+		// Locator::locate();
 	}
 
 	/**
@@ -33,41 +33,28 @@ class SessionsController extends \WelcomeController {
 	 */
 	public function store()
 	{
+
 		$creditials = array(
-			'email' => Input::get('email'),
+			'phone' => Input::get('phone'),
 			'password' => Input::get('password')
 		);
 		
 
 		if (Auth::attempt($creditials)) {
 
+			// YOU ARE LOGGED IN
 
+				// get your roles
+					
+				// redirect to the privilledge page
 			$roles = UserRole::where('user_id','=',Auth::user()->id)->first();
 			$roles = $roles ? $roles->toArray() : [];
-			Session::put('user_id', $roles['user_id']);
-			Session::put('user_type', $roles['type']);
-			Session::put('user_privileges', $roles['privileges']);
-			Session::put('user_userGroup', $roles['userGroup']);
-			Session::put('user_url', $roles['url']);
-			Session::put('level', $roles['security_level']);
-			return Redirect::intended('/admin');
+
+			// return Redirect::intended('/admin');
 		}
-		Flash::error('Access Denied!');
-		return Redirect::back();
-		// varify if the records are in the users table
+		// Flash::error('Access Denied!');
+		// return Redirect::back();
 
-		// get the users table relationships
-
-		// put in an array in teh session 
-
-			// user
-					// security level
-
-					// user details
-
-					// user connection
-
-		// redirect to the dashboard the user should be
 	}
 
 	/**

@@ -47,7 +47,7 @@ class Uploader
         return $this;
 	}
 	public function directory($dir){
-        var_dump($dir);
+
         $this->folder =& $dir;
         $dir = ($dir)?: $this->directory;
         if( \File::exists($dir) ) {

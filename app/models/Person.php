@@ -2,7 +2,7 @@
 
 class Person extends \Eloquent {
 	protected $table = 'persons';
-	protected $fillable = ['pers_fname','pers_mname','pers_lname','pers_type', 'pers_DOB', 'pers_gender','pers_nationality','pers_ethnicity','pers_NIN'];
+	protected $fillable = ['fname','mname','lname','type', 'DOB', 'gender','nationality','ethnicity','NIN'];
 
 public function contacts(){
 	return $this->hasMany('Contact','Cont_EntityID');
@@ -14,5 +14,8 @@ public function addresses(){
 public function documents(){
 	return $this->hasMany('Document','entity_ID');
 }
-
+public static function creation($data){
+	   $person = new static($data);
+	   return $person;
+}	
 }

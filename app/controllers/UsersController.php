@@ -14,7 +14,7 @@ class UsersController extends \BaseController {
 	private $usercreate;
     private $commandBus;
 
-	public function __construct(CommandBus $commandBus, CreateUser $usercreate){
+	 function __construct(CommandBus $commandBus, CreateUser $usercreate){
 		// determine who access what and do all the controlling here
 		// a loop that create an array of the methods you are allowed to access
 		$this->usercreate = $usercreate;

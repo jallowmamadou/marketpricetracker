@@ -46,7 +46,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="exampleModalLabel">Create a new user</h4>
       </div>
-      {{Form::open(array('route'=>'users.store','files' => true, 'class'=>"form-inline",'id'=>"user_form"))}}
+      {{Form::open(array('route'=>'registration.store','files' => true, 'class'=>"form-inline",'id'=>"user_form"))}}
       <div class="modal-body">
           <div class="form-group">
             <label class="control-label">
@@ -56,7 +56,7 @@
               <div class="sek">
                 <div class="input-group">
                   <div class="input-group-addon">Email </div>
-                  <input  placeholder="Enter email address" name="email" type="text" class="form-control">
+                  <input  placeholder="Enter email address" name="phone" type="text" class="form-control">
                 </div>            
               </div>
               <div class="sek">

@@ -35,7 +35,7 @@
 			"services": "app/"
 		},
 		"psr-4":{
-			"Sulsira\\": "app/Sulsira"
+			"Universal\\": "app/Universal"
 		}
 	},
 	"scripts": {
